@@ -272,12 +272,7 @@ function highlightText(text, query) {
 
 // Hàm chuyển đến trang sản phẩm (có thể thêm sau)
 function goToProduct(productId) {
-    // Tạm thời scroll đến phần sản phẩm và highlight sản phẩm được chọn
-    const productSection = document.querySelector('#products');
-    productSection.scrollIntoView({ behavior: 'smooth' });
-    
-    // Lọc và hiển thị sản phẩm được chọn
-    renderProducts([products.find(p => p.id === productId)]);
+    window.location.href = `product-detail.html?id=${productId}`;
 }
 
 // Cập nhật hàm xử lý giỏ hàng
