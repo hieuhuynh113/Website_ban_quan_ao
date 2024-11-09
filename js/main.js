@@ -48,6 +48,7 @@ const products = [
         description: "Chân váy xếp ly nữ thanh lịch, kiểu dáng Hàn Quốc",
         category: "nu"
     },
+    
 ];
 
 // Cart functionality
@@ -858,6 +859,9 @@ function toggleWishlist(productId, event) {
         // Xóa khỏi wishlist
         wishlist = wishlist.filter(id => id !== productId);
         btn.classList.remove('active');
+        
+        // Hiển thị thông báo
+        showNotification('Đã xóa khỏi danh sách yêu thích!');
     } else {
         // Thêm vào wishlist
         wishlist.push(productId);

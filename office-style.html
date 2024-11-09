@@ -79,7 +79,7 @@
         <div class="trend-container">
             <h2>Sản phẩm nổi bật</h2>
             <div class="gallery-grid">
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="window.location.href='product-detail.html?id=10'">
                     <img src="img/office-trend-product-1.jpg" alt="Áo vest nữ">
                     <div class="gallery-overlay">
                         <h3>Áo vest nữ công sở</h3>
@@ -87,7 +87,7 @@
                         <button class="cta-button">Mua ngay</button>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="window.location.href='product-detail.html?id=11'">
                     <img src="img/office-trend-product-2.jpg" alt="Quần âu">
                     <div class="gallery-overlay">
                         <h3>Quần âu nam</h3>
@@ -95,7 +95,7 @@
                         <button class="cta-button">Mua ngay</button>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="window.location.href='product-detail.html?id=12'">
                     <img src="img/office-trend-product-3.jpg" alt="Váy công sở">
                     <div class="gallery-overlay">
                         <h3>Váy bút chì</h3>
@@ -253,14 +253,6 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script>
-        // Khởi tạo các chức năng khi trang load xong
-        document.addEventListener('DOMContentLoaded', () => {
-            initializeSearch();
-            initializeCart();
-            initializeUserAccount();
-            updateCartCount();
-        });
-    </script>
+    
 </body>
 </html> 
